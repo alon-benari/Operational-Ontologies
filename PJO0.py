@@ -49,36 +49,35 @@ with hoo:
         '''
         pass
     
-    class label(diagnostic_test>> str, DataProperty):
-        '''
-        A property to annotate the name of the test
-        '''
-        pass
+    
 
     class orderedBy(diagnostic_test>>Caregiver, ObjectProperty):
         '''
         A property to annotate the caregiver that ordered the test
         '''
         pass
+    orderedBy.comment = ["The caregiver who ordered the diagnostic test."]
 
     class orderedTimeStamp(diagnostic_test>> str, DataProperty):
         '''
         A property to annotate the time the test was ordered
         '''
         pass
-    
+    orderedTimeStamp.comment = ["The time the test was ordered."]
 
     class resultTimeStamp(diagnostic_test>> str, DataProperty):
         ''' 
         A property to annotate the time the test results were ready
         ''' 
         pass
+    resultTimeStamp.comment = ["The time the test results were ready."]
+
     class result(diagnostic_test>> str, DataProperty):
         ''' 
         A property to annotate the results of the test
         '''
         pass
-
+    result.comment = ["The results of the diagnostic test."]
 
      ## financial patient centeredevents
     class financial_event(PatientInteraction):
@@ -93,36 +92,37 @@ with hoo:
         '''
 
         pass
-    
+    hasInteraction.comment = ["The type of interaction the patient had."]
+
     class paymentModality(Thing):
         '''
         A class to model payment modalities
         '''
         pass
         
-    class label(paymentModality >> str, DataProperty):
-        '''
-        A property to annotate the name of the payment modality
-        '''
-        pass
+    
 
     class hasCashPayment(financial_event >> paymentModality, ObjectProperty):
         '''
         Indicates that the financial event involved a cash payment modality.
         '''
         pass
+    hasCashPayment.comment = ["Indicates a cash payment modality."]
+
 
     class hasCreditPayment(financial_event >> paymentModality, ObjectProperty):
         '''
         Indicates that the financial event involved a credit payment modality.
         '''
         pass
+    hasCreditPayment.comment = ["Indicates a credit payment modality."]
 
     class hasCryptoPayment(financial_event >> paymentModality, ObjectProperty):
         '''
         Indicates that the financial event involved a crypto payment modality.
         '''
         pass
+    hasCryptoPayment.comment = ["Indicates a crypto payment modality."]
 
 
    
