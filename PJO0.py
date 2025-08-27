@@ -5,10 +5,12 @@ hoo = get_ontology("http://test.org/healthops.owl#")
 with hoo:
     class Caregiver(Thing):
         pass
+    Caregiver.label = ["A person who provides care to patients."]
+
     class staff(Caregiver):
         pass
 
-    class AIAgent(CareGiver):
+    class AIAgent(Caregiver):
         pass
     class Patient(Thing):
         pass
@@ -24,16 +26,59 @@ with hoo:
         A key node for interaction with patients.
         having an encounter, a procedure
         '''
-    class clinical_event(PatientInteraction):
+    class f2f_clinical_event(PatientInteraction):
         '''
-        Patient centered event that focuses on clinical mngmnt.'''
+        Patient centered event that focuses on clinical mngmnt in a f2f setting.'''
         pass
 
-    class digital_event(PatientInteraction):
+    class digital_clinical_event(PatientInteraction):
         '''
         An event that is carried out digitally.
         '''
         pass
+
+##### ## Medication ontology
+
+
+
+##### diagnostic tests    
+
+    class diagnostic_test(Thing):
+        '''
+        A class for all diagnostic tests whatever they are
+        '''
+        pass
+    
+    class label(diagnostic_test>> str, DataProperty):
+        '''
+        A property to annotate the name of the test
+        '''
+        pass
+
+    class orderedBy(diagnostic_test>>Caregiver, ObjectProperty):
+        '''
+        A property to annotate the caregiver that ordered the test
+        '''
+        pass
+
+    class orderedTimeStamp(diagnostic_test>> str, DataProperty):
+        '''
+        A property to annotate the time the test was ordered
+        '''
+        pass
+    
+
+    class resultTimeStamp(diagnostic_test>> str, DataProperty):
+        ''' 
+        A property to annotate the time the test results were ready
+        ''' 
+        pass
+    class result(diagnostic_test>> str, DataProperty):
+        ''' 
+        A property to annotate the results of the test
+        '''
+        pass
+
 
      ## financial patient centeredevents
     class financial_event(PatientInteraction):
@@ -47,35 +92,39 @@ with hoo:
         A property to annotate the type of interaction the patient had
         '''
 
-    class event_component(Thing):
+        pass
+    
+    class paymentModality(Thing):
         '''
-        Components that go into the event
-        Like, symptoms, histroy, physical exam diagnostics is going to be another class
+        A class to model payment modalities
+        '''
+        pass
+        
+    class label(paymentModality >> str, DataProperty):
+        '''
+        A property to annotate the name of the payment modality
         '''
         pass
 
+    class hasCashPayment(financial_event >> paymentModality, ObjectProperty):
+        '''
+        Indicates that the financial event involved a cash payment modality.
+        '''
+        pass
+
+    class hasCreditPayment(financial_event >> paymentModality, ObjectProperty):
+        '''
+        Indicates that the financial event involved a credit payment modality.
+        '''
+        pass
+
+    class hasCryptoPayment(financial_event >> paymentModality, ObjectProperty):
+        '''
+        Indicates that the financial event involved a crypto payment modality.
+        '''
+        pass
 
 
    
-
-    class payment_modality(Thing):
-        pass
-    
-
-
-    class personal_event():
-        '''
-        an event that is carried out with the patients
-        '''
-        pass
-
-    class procedure(PatientInteraction):
-        '''
-        Any invasive procedure effeting apatient
-        '''
-        pass
-
-
-
 
     
