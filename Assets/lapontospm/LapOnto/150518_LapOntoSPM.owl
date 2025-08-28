@@ -1,0 +1,3367 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/darko/ontologies/2014/9/150518_LapOntoSPM"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/darko/ontologies/2014/9/150518_LapOntoSPM">
+    <Prefix name="" IRI="http://www.semanticweb.org/darko/ontologies/2014/9/150518_LapOntoSPM"/>
+    <Prefix name="obo" IRI="http://purl.obolibrary.org/obo/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="oboInOwl" IRI="http://www.geneontology.org/formats/oboInOwl#"/>
+    <Import>http://ontofox.hegroup.org/FMA_for_LapOntoSPM.owl</Import>
+    <Import>http://medicis/spm.owl/OntoSPM</Import>
+    <Declaration>
+        <Class IRI="#mobilisation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#adhesion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#insufflator_quality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#exploring_the_abdominal_cavity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#endo_GIA_stapler"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#placing_stoma"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#port"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#overholt_forceps"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#equipment_quality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dissecting_the_lymphnodes_and_sigmoid_mesentery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#tumor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#review_relevant_diagnostic_data"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:FMA_9604"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#placing_a_protective_stoma"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#endoscope"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cystic_fluid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#mobilising_splenic_flexure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#delinating_of_vessels"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#end"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#anastomosis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#j-hook"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#division_of_vein"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_surgical_phase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#start"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#review_of_procedure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#light_source"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#resection_cystic_artery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#or1_measurement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#mobilisation_splenic_flexure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#inspection_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#port_placement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#check_for_metastasis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#visual_oversight_of_the_operation_field"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#placing_the_trocar_for_scope"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#performing_diagnostic_laparoscopy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#intensity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#laparoscopic_material"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#finishing_the_operation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_timestamp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#endoscopic_scissor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#removing_trocars"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ligasure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#check_for_adhesions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#resection_gallbladder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#identifying_the_hypogastric_nerves_and_dissecting_the_lateral_and_posterior_mesorectum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#mobilisation_of_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#anastomosing_colon_and_rectum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dissection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#endo_fan_retractor"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:FMA_7203"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dissection_of_lymphnodes_and_blood_vessels"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#tumorinfiltrated_tissue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#preparation_of_anastomosis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#target_flow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dissection_rectum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#peritoneal_cavity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#closing_all_incisions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#single_port"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dissection_and_resection_of_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dividing_the_rectum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#adrenalectomy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#swab_holder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#port_removal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#formation_of_smoke"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#laparoscopy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#placing_the_working_trocars"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#light_source_quality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#specimen_bag"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#supply_pressure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#l-hook"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#performing_a_mini_incision_and_extracting_the_rectosigmoid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#argon_beamer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#resection_of_rectum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#mobilising_the_travers_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_instrument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#i-hook"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#opening_of_lesser_pelvic_peritoneum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#visual_inspectation_lesser_pelvis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#trocar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#creating_pneumoperitoneum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#preparation_and_orientation_at_abdomen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#confirmation_patient_data"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#diagnostic_laparoscopy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_surgical_step"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#team_introduction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#insufflator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#endo_clip_applier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#surgical_drain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#operational_state"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#endoscopic_light"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cyst"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#endoscopic_babcock_grasper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#target_pressure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#gas_volume"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:FMA_14667"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dividing_the_proximal_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#identifying_the_anatomical_landmarks"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#veress_needle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#mobilising_the_sigmoid_and_the_descending_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#drain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#irrigator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#resection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#closure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#preparing_the_anastomosis_intra_abdominally"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#actual_flow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#team_time_out"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#white_balance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#lancing_retroperitoneum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#aspirator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#actual_pressure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cholecystectomy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dissection_of_rectum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#antibiotic_prophylaxis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#mobilising_the_ascending_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#salvage_rectum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#vessel_resection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#resection_cystic_duct"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#preparing_the_anastomosis_extra-abdominally"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#division_of_artery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#inspection_lesser_pelvis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#verifying_the_anastomosis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#clot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#endoscopic_ultrasound"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#water"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dissecting_the_anterior_mesorectum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#laparoscopic_proctocolectomy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#mobilisation_descending_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#deflation_of_abdomen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#i_hook"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dividing_the_inferior_mesenteric_vessels"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#transect_rectum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#mobilisation_sigmoid"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_possible_next_phase"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:MPATH_603"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#combined_instrument"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:BFO_0000019"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#temporal_instant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#pancreatic_resection"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:IAO_0000221"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#retractor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#mechanical_instrument"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:BFO_0000030"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:BFO_0000080"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#body_part"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#to_coagulate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#to_puncture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#to_blunt_dissect"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://medicis/spm.owl/OntoSPM#has_instrument_function_at_some_time"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:BFO_0000159"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#to_grasp"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:BFO_0000151"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#to_visualise"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_scissors"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="obo:IAO_0000004"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:FMA_9669"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_material"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#to_suck"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:FMA_5897"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://medicis/spm.owl/OntoSPM#has_instrument_function_at_all_times"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#to_cut"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#to_resect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#optical_instrument"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:BFO_0000167"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#stapling_instrument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#to_deposit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#ring_handle_forceps"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:BFO_0000117"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:BFO_0000111"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#forceps"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_light"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_incident"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#electrical_instrument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#hook"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:BFO_0000137"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#to_rinse"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:BFO_0000130"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:BFO_0000132"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:IAO_0000109"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#to_dissect"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:BFO_0000123"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#to_lift"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#to_suture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#medical_device"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#needle_holder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#atraumatic_forceps"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#to_put"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_phase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#thread"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#to_clip"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#monopolar_instrument"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#compress"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#compress"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://medicis/spm.owl/OntoSPM#has_instrument_function_at_some_time"/>
+            <Class IRI="http://medicis/spm.owl/OntoSPM#to_suck"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#needle_holder"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_instrument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#needle_holder"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://medicis/spm.owl/OntoSPM#has_instrument_function_at_all_times"/>
+            <Class IRI="http://medicis/spm.owl/OntoSPM#to_suture"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#stapling_instrument"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#mechanical_instrument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#stapling_instrument"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://medicis/spm.owl/OntoSPM#has_instrument_function_at_some_time"/>
+            <Class IRI="http://medicis/spm.owl/OntoSPM#to_cut"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#stapling_instrument"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://medicis/spm.owl/OntoSPM#has_instrument_function_at_some_time"/>
+            <Class IRI="http://medicis/spm.owl/OntoSPM#to_resect"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_instrument"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_instrument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_light"/>
+        <Class IRI="#light_source"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#temporal_instant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#has_timestamp"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#thread"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://medicis/spm.owl/OntoSPM#has_instrument_function_at_all_times"/>
+            <Class IRI="http://medicis/spm.owl/OntoSPM#to_suture"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:FMA_67165"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#body_part"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#actual_flow"/>
+        <Class IRI="#insufflator_quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#actual_pressure"/>
+        <Class IRI="#insufflator_quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#adhesion"/>
+        <Class abbreviatedIRI="obo:MPATH_603"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#adrenalectomy"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#anastomosing_colon_and_rectum"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#anastomosis"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_phase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#antibiotic_prophylaxis"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#argon_beamer"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#monopolar_instrument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#argon_beamer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://medicis/spm.owl/OntoSPM#has_instrument_function_at_all_times"/>
+            <Class IRI="http://medicis/spm.owl/OntoSPM#to_coagulate"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#aspirator"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#electrical_instrument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#aspirator"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://medicis/spm.owl/OntoSPM#has_instrument_function_at_some_time"/>
+            <Class IRI="http://medicis/spm.owl/OntoSPM#to_suck"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#check_for_adhesions"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#check_for_metastasis"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cholecystectomy"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#closing_all_incisions"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#closure"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_phase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#closure"/>
+        <ObjectUnionOf>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty abbreviatedIRI="obo:BFO_0000132"/>
+                    <Class IRI="http://medicis/spm.owl/OntoSPM#pancreatic_resection"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#has_possible_next_phase"/>
+                    <ObjectUnionOf>
+                        <Class IRI="#closure"/>
+                        <Class IRI="#drain"/>
+                        <Class IRI="#mobilisation"/>
+                        <Class IRI="#resection"/>
+                    </ObjectUnionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty abbreviatedIRI="obo:BFO_0000132"/>
+                    <Class IRI="#adrenalectomy"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#has_possible_next_phase"/>
+                    <ObjectUnionOf>
+                        <Class IRI="#closure"/>
+                        <Class IRI="#drain"/>
+                    </ObjectUnionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty abbreviatedIRI="obo:BFO_0000132"/>
+                    <Class IRI="#cholecystectomy"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#has_possible_next_phase"/>
+                    <ObjectUnionOf>
+                        <Class IRI="#closure"/>
+                        <Class IRI="#drain"/>
+                    </ObjectUnionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#closure"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:BFO_0000132"/>
+            <ObjectUnionOf>
+                <Class IRI="http://medicis/spm.owl/OntoSPM#pancreatic_resection"/>
+                <Class IRI="#adrenalectomy"/>
+                <Class IRI="#cholecystectomy"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#clot"/>
+        <Class abbreviatedIRI="obo:FMA_9669"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#confirmation_patient_data"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#creating_pneumoperitoneum"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cyst"/>
+        <Class abbreviatedIRI="obo:MPATH_603"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cystic_fluid"/>
+        <Class abbreviatedIRI="obo:FMA_9669"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#deflation_of_abdomen"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#delinating_of_vessels"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#diagnostic_laparoscopy"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_phase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#diagnostic_laparoscopy"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_step"/>
+            <Class IRI="#check_for_adhesions"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#diagnostic_laparoscopy"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_step"/>
+            <Class IRI="#check_for_metastasis"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dissecting_the_anterior_mesorectum"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dissecting_the_lymphnodes_and_sigmoid_mesentery"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dissection"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_phase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dissection"/>
+        <ObjectUnionOf>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty abbreviatedIRI="obo:BFO_0000132"/>
+                    <Class IRI="http://medicis/spm.owl/OntoSPM#pancreatic_resection"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#has_possible_next_phase"/>
+                    <ObjectUnionOf>
+                        <Class IRI="#dissection"/>
+                        <Class IRI="#mobilisation"/>
+                        <Class IRI="#port_placement"/>
+                        <Class IRI="#resection"/>
+                    </ObjectUnionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty abbreviatedIRI="obo:BFO_0000132"/>
+                    <Class IRI="#adrenalectomy"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#has_possible_next_phase"/>
+                    <ObjectUnionOf>
+                        <Class IRI="#dissection"/>
+                        <Class IRI="#mobilisation"/>
+                        <Class IRI="#port_placement"/>
+                        <Class IRI="#resection"/>
+                    </ObjectUnionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty abbreviatedIRI="obo:BFO_0000132"/>
+                    <Class IRI="#cholecystectomy"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#has_possible_next_phase"/>
+                    <ObjectUnionOf>
+                        <Class IRI="#dissection"/>
+                        <Class IRI="#resection_cystic_artery"/>
+                        <Class IRI="#resection_cystic_duct"/>
+                        <Class IRI="#resection_gallbladder"/>
+                    </ObjectUnionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dissection"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:BFO_0000132"/>
+            <ObjectUnionOf>
+                <Class IRI="http://medicis/spm.owl/OntoSPM#pancreatic_resection"/>
+                <Class IRI="#adrenalectomy"/>
+                <Class IRI="#cholecystectomy"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dissection_and_resection_of_colon"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_phase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dissection_and_resection_of_colon"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_step"/>
+            <Class IRI="#dissecting_the_anterior_mesorectum"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dissection_and_resection_of_colon"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_step"/>
+            <Class IRI="#dividing_the_proximal_colon"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dissection_and_resection_of_colon"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_step"/>
+            <Class IRI="#dividing_the_rectum"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dissection_and_resection_of_colon"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_step"/>
+            <Class IRI="#identifying_the_hypogastric_nerves_and_dissecting_the_lateral_and_posterior_mesorectum"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dissection_and_resection_of_colon"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_step"/>
+            <Class IRI="#performing_a_mini_incision_and_extracting_the_rectosigmoid"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dissection_of_lymphnodes_and_blood_vessels"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_phase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dissection_of_lymphnodes_and_blood_vessels"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_step"/>
+            <Class IRI="#dissecting_the_lymphnodes_and_sigmoid_mesentery"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dissection_of_lymphnodes_and_blood_vessels"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_step"/>
+            <Class IRI="#dividing_the_inferior_mesenteric_vessels"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dissection_of_rectum"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_phase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dissection_of_rectum"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_step"/>
+            <Class IRI="#dissection_rectum"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dissection_of_rectum"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_step"/>
+            <Class IRI="#opening_of_lesser_pelvic_peritoneum"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dissection_rectum"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dividing_the_inferior_mesenteric_vessels"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dividing_the_proximal_colon"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dividing_the_rectum"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#division_of_artery"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#division_of_vein"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#drain"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_phase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#drain"/>
+        <ObjectUnionOf>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty abbreviatedIRI="obo:BFO_0000132"/>
+                    <Class IRI="#adrenalectomy"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#has_possible_next_phase"/>
+                    <Class IRI="#drain"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty abbreviatedIRI="obo:BFO_0000132"/>
+                    <Class IRI="#cholecystectomy"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#has_possible_next_phase"/>
+                    <Class IRI="#drain"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#drain"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:BFO_0000132"/>
+            <ObjectUnionOf>
+                <Class IRI="http://medicis/spm.owl/OntoSPM#pancreatic_resection"/>
+                <Class IRI="#adrenalectomy"/>
+                <Class IRI="#cholecystectomy"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#end"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_phase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#endo_GIA_stapler"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#stapling_instrument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#endo_clip_applier"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#mechanical_instrument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#endo_clip_applier"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://medicis/spm.owl/OntoSPM#has_instrument_function_at_all_times"/>
+            <Class IRI="http://medicis/spm.owl/OntoSPM#to_clip"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#endo_fan_retractor"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#retractor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#endo_fan_retractor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://medicis/spm.owl/OntoSPM#has_instrument_function_at_all_times"/>
+            <Class IRI="http://medicis/spm.owl/OntoSPM#to_lift"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#endoscope"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#medical_device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#endoscope"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://medicis/spm.owl/OntoSPM#has_instrument_function_at_some_time"/>
+            <Class IRI="http://medicis/spm.owl/OntoSPM#to_visualise"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#endoscope"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:BFO_0000111"/>
+            <Class IRI="#endoscopic_light"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#endoscope"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:BFO_0000159"/>
+            <Class IRI="#white_balance"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#endoscopic_babcock_grasper"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#mechanical_instrument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#endoscopic_babcock_grasper"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://medicis/spm.owl/OntoSPM#has_instrument_function_at_all_times"/>
+            <Class IRI="http://medicis/spm.owl/OntoSPM#to_grasp"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#endoscopic_babcock_grasper"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://medicis/spm.owl/OntoSPM#has_instrument_function_at_all_times"/>
+            <Class IRI="http://medicis/spm.owl/OntoSPM#to_lift"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#endoscopic_light"/>
+        <Class IRI="#light_source"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#endoscopic_light"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:BFO_0000137"/>
+            <Class IRI="#endoscope"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#endoscopic_scissor"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#mechanical_instrument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#endoscopic_scissor"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_scissors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#endoscopic_scissor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://medicis/spm.owl/OntoSPM#has_instrument_function_at_all_times"/>
+            <Class IRI="http://medicis/spm.owl/OntoSPM#to_cut"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#endoscopic_ultrasound"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#optical_instrument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#endoscopic_ultrasound"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://medicis/spm.owl/OntoSPM#has_instrument_function_at_some_time"/>
+            <Class IRI="http://medicis/spm.owl/OntoSPM#to_put"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#equipment_quality"/>
+        <Class abbreviatedIRI="obo:BFO_0000019"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#exploring_the_abdominal_cavity"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#finishing_the_operation"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_phase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#finishing_the_operation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_step"/>
+            <Class IRI="#closing_all_incisions"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#finishing_the_operation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_step"/>
+            <Class IRI="#deflation_of_abdomen"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#finishing_the_operation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_step"/>
+            <Class IRI="#removing_trocars"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#finishing_the_operation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_step"/>
+            <Class IRI="#visual_oversight_of_the_operation_field"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#formation_of_smoke"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_incident"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#gas_volume"/>
+        <Class IRI="#insufflator_quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#i-hook"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#monopolar_instrument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#i-hook"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://medicis/spm.owl/OntoSPM#has_instrument_function_at_all_times"/>
+            <Class IRI="http://medicis/spm.owl/OntoSPM#to_coagulate"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#i-hook"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://medicis/spm.owl/OntoSPM#has_instrument_function_at_all_times"/>
+            <Class IRI="http://medicis/spm.owl/OntoSPM#to_dissect"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#i_hook"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#hook"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#identifying_the_anatomical_landmarks"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#identifying_the_hypogastric_nerves_and_dissecting_the_lateral_and_posterior_mesorectum"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#inspection_colon"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#inspection_lesser_pelvis"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#insufflator"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#medical_device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#insufflator"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:BFO_0000159"/>
+            <Class IRI="#insufflator_quality"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#insufflator_quality"/>
+        <Class IRI="#equipment_quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#insufflator_quality"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:BFO_0000080"/>
+            <Class IRI="#insufflator"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#intensity"/>
+        <Class IRI="#light_source_quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#irrigator"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_instrument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#irrigator"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://medicis/spm.owl/OntoSPM#has_instrument_function_at_all_times"/>
+            <Class IRI="http://medicis/spm.owl/OntoSPM#to_rinse"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#j-hook"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#hook"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#j-hook"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#monopolar_instrument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#l-hook"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#hook"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#l-hook"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#monopolar_instrument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#lancing_retroperitoneum"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#laparoscopic_material"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_material"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#laparoscopic_proctocolectomy"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#laparoscopic_proctocolectomy"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_phase"/>
+            <Class IRI="#dissection_of_lymphnodes_and_blood_vessels"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#laparoscopic_proctocolectomy"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_phase"/>
+            <Class IRI="#dissection_of_rectum"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#laparoscopic_proctocolectomy"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_phase"/>
+            <Class IRI="#mobilisation_of_colon"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#laparoscopic_proctocolectomy"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_phase"/>
+            <Class IRI="#placing_stoma"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#laparoscopic_proctocolectomy"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_phase"/>
+            <Class IRI="#preparation_and_orientation_at_abdomen"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#laparoscopic_proctocolectomy"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_phase"/>
+            <Class IRI="#preparation_of_anastomosis"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#laparoscopic_proctocolectomy"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_phase"/>
+            <Class IRI="#resection_of_rectum"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#laparoscopic_proctocolectomy"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_phase"/>
+            <Class IRI="#team_time_out"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#laparoscopy"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#laparoscopy"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:BFO_0000130"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="obo:BFO_0000151"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty abbreviatedIRI="obo:BFO_0000123"/>
+                    <Class IRI="#peritoneal_cavity"/>
+                </ObjectSomeValuesFrom>
+            </ObjectSomeValuesFrom>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#laparoscopy"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:BFO_0000132"/>
+            <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#laparoscopy"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:BFO_0000167"/>
+            <Class IRI="#endoscope"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ligasure"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#combined_instrument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ligasure"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://medicis/spm.owl/OntoSPM#has_instrument_function_at_all_times"/>
+            <Class IRI="http://medicis/spm.owl/OntoSPM#to_coagulate"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ligasure"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://medicis/spm.owl/OntoSPM#has_instrument_function_at_all_times"/>
+            <Class IRI="http://medicis/spm.owl/OntoSPM#to_cut"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ligasure"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://medicis/spm.owl/OntoSPM#has_instrument_function_at_all_times"/>
+            <Class IRI="http://medicis/spm.owl/OntoSPM#to_dissect"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#light_source"/>
+        <Class abbreviatedIRI="obo:BFO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#light_source"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:BFO_0000159"/>
+            <Class IRI="#light_source_quality"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#light_source_quality"/>
+        <Class IRI="#equipment_quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mobilisation"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_phase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mobilisation"/>
+        <ObjectUnionOf>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty abbreviatedIRI="obo:BFO_0000132"/>
+                    <Class IRI="http://medicis/spm.owl/OntoSPM#pancreatic_resection"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#has_possible_next_phase"/>
+                    <ObjectUnionOf>
+                        <Class IRI="#dissection"/>
+                        <Class IRI="#drain"/>
+                        <Class IRI="#mobilisation"/>
+                        <Class IRI="#port_placement"/>
+                        <Class IRI="#resection"/>
+                    </ObjectUnionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty abbreviatedIRI="obo:BFO_0000132"/>
+                    <Class IRI="#adrenalectomy"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#has_possible_next_phase"/>
+                    <ObjectUnionOf>
+                        <Class IRI="#dissection"/>
+                        <Class IRI="#mobilisation"/>
+                        <Class IRI="#port_placement"/>
+                    </ObjectUnionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty abbreviatedIRI="obo:BFO_0000132"/>
+                    <Class IRI="#cholecystectomy"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#has_possible_next_phase"/>
+                    <ObjectUnionOf>
+                        <Class IRI="#dissection"/>
+                        <Class IRI="#mobilisation"/>
+                    </ObjectUnionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mobilisation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:BFO_0000132"/>
+            <ObjectUnionOf>
+                <Class IRI="http://medicis/spm.owl/OntoSPM#pancreatic_resection"/>
+                <Class IRI="#adrenalectomy"/>
+                <Class IRI="#cholecystectomy"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mobilisation_descending_colon"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mobilisation_of_colon"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_phase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mobilisation_of_colon"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_step"/>
+            <Class IRI="#inspection_colon"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mobilisation_of_colon"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_step"/>
+            <Class IRI="#mobilisation_descending_colon"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mobilisation_of_colon"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_step"/>
+            <Class IRI="#mobilisation_sigmoid"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mobilisation_of_colon"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_step"/>
+            <Class IRI="#mobilisation_splenic_flexure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mobilisation_of_colon"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_step"/>
+            <Class IRI="#mobilising_splenic_flexure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mobilisation_of_colon"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_step"/>
+            <Class IRI="#mobilising_the_ascending_colon"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mobilisation_of_colon"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_step"/>
+            <Class IRI="#mobilising_the_sigmoid_and_the_descending_colon"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mobilisation_of_colon"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_step"/>
+            <Class IRI="#mobilising_the_travers_colon"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mobilisation_sigmoid"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mobilisation_splenic_flexure"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mobilising_splenic_flexure"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mobilising_the_ascending_colon"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mobilising_the_sigmoid_and_the_descending_colon"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mobilising_the_travers_colon"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#opening_of_lesser_pelvic_peritoneum"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#operational_state"/>
+        <Class IRI="#equipment_quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#or1_measurement"/>
+        <Class abbreviatedIRI="obo:IAO_0000109"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#or1_measurement"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:IAO_0000221"/>
+            <Class abbreviatedIRI="obo:BFO_0000019"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#or1_measurement"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="obo:IAO_0000004"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#or1_measurement"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#has_timestamp"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#overholt_forceps"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#atraumatic_forceps"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#overholt_forceps"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#mechanical_instrument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#overholt_forceps"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#ring_handle_forceps"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#overholt_forceps"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://medicis/spm.owl/OntoSPM#has_instrument_function_at_all_times"/>
+            <Class IRI="http://medicis/spm.owl/OntoSPM#to_blunt_dissect"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#overholt_forceps"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://medicis/spm.owl/OntoSPM#has_instrument_function_at_all_times"/>
+            <Class IRI="http://medicis/spm.owl/OntoSPM#to_grasp"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#performing_a_mini_incision_and_extracting_the_rectosigmoid"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#performing_diagnostic_laparoscopy"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#peritoneal_cavity"/>
+        <Class abbreviatedIRI="obo:FMA_5897"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#placing_a_protective_stoma"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#placing_stoma"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_phase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#placing_stoma"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_step"/>
+            <Class IRI="#placing_a_protective_stoma"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#placing_the_trocar_for_scope"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#placing_the_working_trocars"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#port"/>
+        <Class IRI="#laparoscopic_material"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#port"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://medicis/spm.owl/OntoSPM#has_instrument_function_at_all_times"/>
+            <Class IRI="http://medicis/spm.owl/OntoSPM#to_put"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#port_placement"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_phase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#port_placement"/>
+        <ObjectUnionOf>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty abbreviatedIRI="obo:BFO_0000132"/>
+                    <Class IRI="http://medicis/spm.owl/OntoSPM#pancreatic_resection"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#has_possible_next_phase"/>
+                    <ObjectUnionOf>
+                        <Class IRI="#dissection"/>
+                        <Class IRI="#drain"/>
+                        <Class IRI="#mobilisation"/>
+                        <Class IRI="#port_placement"/>
+                    </ObjectUnionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty abbreviatedIRI="obo:BFO_0000132"/>
+                    <Class IRI="#adrenalectomy"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#has_possible_next_phase"/>
+                    <ObjectUnionOf>
+                        <Class IRI="#dissection"/>
+                        <Class IRI="#mobilisation"/>
+                        <Class IRI="#port_placement"/>
+                        <Class IRI="#resection"/>
+                    </ObjectUnionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty abbreviatedIRI="obo:BFO_0000132"/>
+                    <Class IRI="#cholecystectomy"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#has_possible_next_phase"/>
+                    <ObjectUnionOf>
+                        <Class IRI="#dissection"/>
+                        <Class IRI="#mobilisation"/>
+                        <Class IRI="#port_placement"/>
+                    </ObjectUnionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#port_placement"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:BFO_0000132"/>
+            <ObjectUnionOf>
+                <Class IRI="http://medicis/spm.owl/OntoSPM#pancreatic_resection"/>
+                <Class IRI="#adrenalectomy"/>
+                <Class IRI="#cholecystectomy"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#port_removal"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_phase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#preparation_and_orientation_at_abdomen"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_phase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#preparation_and_orientation_at_abdomen"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_step"/>
+            <Class IRI="#creating_pneumoperitoneum"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#preparation_and_orientation_at_abdomen"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_step"/>
+            <Class IRI="#exploring_the_abdominal_cavity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#preparation_and_orientation_at_abdomen"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_step"/>
+            <Class IRI="#identifying_the_anatomical_landmarks"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#preparation_and_orientation_at_abdomen"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_step"/>
+            <Class IRI="#performing_diagnostic_laparoscopy"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#preparation_and_orientation_at_abdomen"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_step"/>
+            <Class IRI="#placing_the_trocar_for_scope"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#preparation_and_orientation_at_abdomen"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_step"/>
+            <Class IRI="#placing_the_working_trocars"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#preparation_of_anastomosis"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_phase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#preparation_of_anastomosis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_step"/>
+            <Class IRI="#anastomosing_colon_and_rectum"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#preparation_of_anastomosis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_step"/>
+            <Class IRI="#preparing_the_anastomosis_extra-abdominally"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#preparation_of_anastomosis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_step"/>
+            <Class IRI="#preparing_the_anastomosis_intra_abdominally"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#preparation_of_anastomosis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_step"/>
+            <Class IRI="#verifying_the_anastomosis"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#preparing_the_anastomosis_extra-abdominally"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#preparing_the_anastomosis_intra_abdominally"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pus"/>
+        <Class abbreviatedIRI="obo:FMA_9669"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#removing_trocars"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#resection"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_phase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#resection"/>
+        <ObjectUnionOf>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty abbreviatedIRI="obo:BFO_0000132"/>
+                    <Class IRI="http://medicis/spm.owl/OntoSPM#pancreatic_resection"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#has_possible_next_phase"/>
+                    <ObjectUnionOf>
+                        <Class IRI="#closure"/>
+                        <Class IRI="#dissection"/>
+                        <Class IRI="#drain"/>
+                        <Class IRI="#mobilisation"/>
+                        <Class IRI="#port_placement"/>
+                        <Class IRI="#resection"/>
+                    </ObjectUnionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty abbreviatedIRI="obo:BFO_0000132"/>
+                    <Class IRI="#adrenalectomy"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#has_possible_next_phase"/>
+                    <ObjectUnionOf>
+                        <Class IRI="#closure"/>
+                        <Class IRI="#dissection"/>
+                        <Class IRI="#resection"/>
+                    </ObjectUnionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#resection"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:BFO_0000132"/>
+            <ObjectUnionOf>
+                <Class IRI="http://medicis/spm.owl/OntoSPM#pancreatic_resection"/>
+                <Class IRI="#adrenalectomy"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#resection_cystic_artery"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_phase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#resection_cystic_artery"/>
+        <ObjectIntersectionOf>
+            <ObjectUnionOf>
+                <Class IRI="#resection_cystic_artery"/>
+                <Class IRI="#resection_gallbladder"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#has_possible_next_phase"/>
+                    <Class IRI="#resection_cystic_duct"/>
+                </ObjectSomeValuesFrom>
+            </ObjectUnionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="obo:BFO_0000132"/>
+                <Class IRI="#cholecystectomy"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#resection_cystic_artery"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:BFO_0000132"/>
+            <Class IRI="#cholecystectomy"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#resection_cystic_duct"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_phase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#resection_cystic_duct"/>
+        <ObjectIntersectionOf>
+            <ObjectUnionOf>
+                <Class IRI="#resection_cystic_artery"/>
+                <Class IRI="#resection_gallbladder"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#has_possible_next_phase"/>
+                    <Class IRI="#resection_cystic_duct"/>
+                </ObjectSomeValuesFrom>
+            </ObjectUnionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="obo:BFO_0000132"/>
+                <Class IRI="#cholecystectomy"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#resection_cystic_duct"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:BFO_0000132"/>
+            <Class IRI="#cholecystectomy"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#resection_gallbladder"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_phase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#resection_gallbladder"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="obo:BFO_0000132"/>
+                <Class IRI="#cholecystectomy"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#has_possible_next_phase"/>
+                <ObjectUnionOf>
+                    <Class IRI="#closure"/>
+                    <Class IRI="#dissection"/>
+                    <Class IRI="#resection_gallbladder"/>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#resection_gallbladder"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:BFO_0000132"/>
+            <Class IRI="#cholecystectomy"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#resection_of_rectum"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_phase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#resection_of_rectum"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_step"/>
+            <Class IRI="#salvage_rectum"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#resection_of_rectum"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_step"/>
+            <Class IRI="#transect_rectum"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#resection_of_rectum"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_step"/>
+            <Class IRI="#visual_inspectation_lesser_pelvis"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#review_of_procedure"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#review_relevant_diagnostic_data"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#salvage_rectum"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#single_port"/>
+        <Class IRI="#port"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#specimen_bag"/>
+        <Class IRI="#laparoscopic_material"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#specimen_bag"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://medicis/spm.owl/OntoSPM#has_instrument_function_at_all_times"/>
+            <Class IRI="http://medicis/spm.owl/OntoSPM#to_deposit"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#specimen_bag"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://medicis/spm.owl/OntoSPM#has_instrument_function_at_all_times"/>
+            <Class IRI="http://medicis/spm.owl/OntoSPM#to_put"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#start"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_phase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#start"/>
+        <ObjectUnionOf>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty abbreviatedIRI="obo:BFO_0000132"/>
+                    <Class IRI="http://medicis/spm.owl/OntoSPM#pancreatic_resection"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#has_possible_next_phase"/>
+                    <ObjectUnionOf>
+                        <Class IRI="#mobilisation"/>
+                        <Class IRI="#port_placement"/>
+                        <Class IRI="#start"/>
+                    </ObjectUnionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty abbreviatedIRI="obo:BFO_0000132"/>
+                    <Class IRI="#adrenalectomy"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#has_possible_next_phase"/>
+                    <ObjectUnionOf>
+                        <Class IRI="#mobilisation"/>
+                        <Class IRI="#port_placement"/>
+                        <Class IRI="#start"/>
+                    </ObjectUnionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty abbreviatedIRI="obo:BFO_0000132"/>
+                    <Class IRI="#cholecystectomy"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#has_possible_next_phase"/>
+                    <ObjectUnionOf>
+                        <Class IRI="#dissection"/>
+                        <Class IRI="#mobilisation"/>
+                        <Class IRI="#port_placement"/>
+                        <Class IRI="#resection_gallbladder"/>
+                        <Class IRI="#start"/>
+                    </ObjectUnionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#start"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:BFO_0000132"/>
+            <ObjectUnionOf>
+                <Class IRI="http://medicis/spm.owl/OntoSPM#pancreatic_resection"/>
+                <Class IRI="#adrenalectomy"/>
+                <Class IRI="#cholecystectomy"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#supply_pressure"/>
+        <Class IRI="#insufflator_quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#surgical_drain"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_material"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#surgical_drain"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://medicis/spm.owl/OntoSPM#has_instrument_function_at_all_times"/>
+            <Class IRI="http://medicis/spm.owl/OntoSPM#to_put"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#surgical_drain"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://medicis/spm.owl/OntoSPM#has_instrument_function_at_all_times"/>
+            <Class IRI="http://medicis/spm.owl/OntoSPM#to_suck"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#swab_holder"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#forceps"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#target_flow"/>
+        <Class IRI="#insufflator_quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#target_pressure"/>
+        <Class IRI="#insufflator_quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#team_introduction"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#team_time_out"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_phase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#team_time_out"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_step"/>
+            <Class IRI="#antibiotic_prophylaxis"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#team_time_out"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_step"/>
+            <Class IRI="#confirmation_patient_data"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#team_time_out"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_step"/>
+            <Class IRI="#review_of_procedure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#team_time_out"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_step"/>
+            <Class IRI="#review_relevant_diagnostic_data"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#team_time_out"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_step"/>
+            <Class IRI="#team_introduction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#transect_rectum"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#trocar"/>
+        <Class IRI="#laparoscopic_material"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#tumor"/>
+        <Class abbreviatedIRI="obo:MPATH_603"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#tumorinfiltrated_tissue"/>
+        <Class abbreviatedIRI="obo:MPATH_603"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#veress_needle"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#mechanical_instrument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#veress_needle"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://medicis/spm.owl/OntoSPM#has_instrument_function_at_all_times"/>
+            <Class IRI="http://medicis/spm.owl/OntoSPM#to_puncture"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#verifying_the_anastomosis"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#vessel_resection"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_phase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#vessel_resection"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_step"/>
+            <Class IRI="#delinating_of_vessels"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#vessel_resection"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_step"/>
+            <Class IRI="#division_of_artery"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#vessel_resection"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_step"/>
+            <Class IRI="#division_of_vein"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#vessel_resection"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_surgical_step"/>
+            <Class IRI="#lancing_retroperitoneum"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#visual_inspectation_lesser_pelvis"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#visual_oversight_of_the_operation_field"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#water"/>
+        <Class abbreviatedIRI="obo:FMA_9669"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#white_balance"/>
+        <Class IRI="#equipment_quality"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_possible_next_phase"/>
+        <ObjectProperty abbreviatedIRI="obo:BFO_0000117"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_surgical_phase"/>
+        <ObjectProperty abbreviatedIRI="obo:BFO_0000117"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_surgical_step"/>
+        <ObjectProperty abbreviatedIRI="obo:BFO_0000117"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_surgical_phase"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_phase"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_surgical_step"/>
+        <Class IRI="http://medicis/spm.owl/OntoSPM#surgical_procedure_step"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>http://medicis/spm.owl/KaRenSPMOntology#amount_of_substance</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Amount of substance is a standards-defined quantity that measures the size of an ensemble of elementary entities, such as atoms, molecules, electrons, and other particles.
+
+[Wikipedia &quot;amount of substance&quot; in 2015]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>http://medicis/spm.owl/OntoSPM#harmonic_scalpel</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Harmonic Scalpel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
+        <IRI>http://medicis/spm.owl/OntoSPM#mechanical_instrument</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Graspers, forceps, retractors, scissors, needles, ...</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://medicis/spm.owl/OntoSPM#monopolar_electrode</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An electrode used in electrocautery, whereby the current travels back to the generator through an inactive electrode attached to the patient, so that the patient is part of the electrical circuit.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>http://medicis/spm.owl/OntoSPM#temporal_instant</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Augenblick</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
+        <AbbreviatedIRI>obo:FMA_14667</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/fma.owl</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:hasExactSynonym"/>
+        <AbbreviatedIRI>obo:FMA_14667</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Ductus choledochus (biliaris)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:hasOBONamespace"/>
+        <AbbreviatedIRI>obo:FMA_14667</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">fma</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:id"/>
+        <AbbreviatedIRI>obo:FMA_14667</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FMA:14667</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:FMA_14667</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Common bile duct</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
+        <AbbreviatedIRI>obo:FMA_7203</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/fma.owl</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:hasOBONamespace"/>
+        <AbbreviatedIRI>obo:FMA_7203</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">fma</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:id"/>
+        <AbbreviatedIRI>obo:FMA_7203</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FMA:7203</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:FMA_7203</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Kidney</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
+        <AbbreviatedIRI>obo:FMA_9604</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/fma.owl</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:hasExactSynonym"/>
+        <AbbreviatedIRI>obo:FMA_9604</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Suprarenal gland</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:hasOBONamespace"/>
+        <AbbreviatedIRI>obo:FMA_9604</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">fma</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:id"/>
+        <AbbreviatedIRI>obo:FMA_9604</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FMA:9604</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:FMA_9604</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Adrenal gland</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:IAO_0000412</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">imported from</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>oboInOwl:hasExactSynonym</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">has_exact_synonym</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>oboInOwl:hasOBONamespace</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">has_obo_namespace</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#actual_flow</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The actual flow describes the flowing amount of a substance within a insufflator.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#actual_flow</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ist-Flusss</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#actual_flow</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">actual flow</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#actual_flow</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">flux actuel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#actual_pressure</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ist-Druck</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#actual_pressure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The actual pressure is the pressure existing at that moment within the insufflator.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#actual_pressure</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">acutal pressure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#actual_pressure</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">pression actuel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#adrenalectomy</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An adrenalectomy is a surgigal procedure while the all or parts of the adrenal gland is removed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#adrenalectomy</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Adrenalektomie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#adrenalectomy</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Surrénalectomie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#adrenalectomy</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">adrenalectomy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#anastomosis</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">In the last phase the sigmoid colon and the rectal stump are prepared for the anastomosis. Afterwards the anastomosis is performed by a circular stapler and checked for insufficiency by insufflating the colon, filling the lesser pelvis with water and checking for bubbles.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#argon_beamer</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The argon beamer is an monopolar instrument that is used for Argon Plasma Coagulation (APC).
+
+High frequency alternating current is conducted through the tissue you want to coagulate via an ionized argon gas (Argon plasma) .
+
+ [&quot;Medizintechnik - Verfahren, Systeme, Informationsverarbeitung&quot; by Rüdiger Kramme in 2006]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#argon_beamer</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Argon Beamer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#argon_beamer</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">argon beamer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#aspirator</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An instrument or apparatus for aspirating, breathes in or sucks fluid from a vessel or cavity
+
+[www.oxforddictionaries.com in Jan 2015]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#aspirator</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Aspirator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#aspirator</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">apirator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#aspirator</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">aspirateur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#cholecystectomy</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A cholecystectomy is a surgical procedure while the gallbladder is removed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#cholecystectomy</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Cholezystektomie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#cholecystectomy</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">cholecystectomy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#cholecystectomy</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">cholécystectomie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#diagnostic_laparoscopy</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">For the diagnostic laparoscopy it is nescessary to establish pneumoperitoneum. Thereafter the camera trocar is placed and the diagnostic laparoscopy begins. The diagnostic laparoscopy is done to evaluate all parenchymal organs for metastasis and perform adhesiolysis if necessary. In the end of this phase are other trocars placed under visibility.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#dissection_of_rectum</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">In this phase the lesser pelvis is opened, the rectum dissected and the stapler on the rectum fired. To open the lesser pelvis it is necessary to set two incisions on the right and on the left side of the rectum. Thereby the left and right ureter have to be exposed. After this step the incisions get connected and the rectum dissected circumferential.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#endo_GIA_stapler</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An endo GIA stapler is a linear cutter stapler, is used for resection and reanastomosis.
+It is a disposable, reloadable stapler that distributes two double-staggered rows of tinanium staples while cutting the tissues between the rows. The length is determined by the tissue to be excised.
+
+[&quot;Surgical instrumentation&quot; by Renee Nemitz in 2013]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#endo_GIA_stapler</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Endo GIA Stapler</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#endo_GIA_stapler</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">endo GIA stapler</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#endo_clip_applier</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Used for occluding vessels or other tubular structures. A sterile individual patient-use instrument, preloaded with clips. These are manufactured in various sizes.
+
+
+[&quot;Surgical instrumentation&quot; by Renee Nemitz in 2013]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#endo_clip_applier</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Endo Clip Applier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#endo_clip_applier</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Endo Clip Applier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#endo_fan_retractor</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A fan retractor is used for elevation, retraction and mobilization of organs and tissues, providing optimal visualization of the surgical field. It is a single-use retractor with three or five telescopic atraumatic blades.
+
+[&quot;Surgical instrumentation&quot; by Renee Nemitz in 2013]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#endo_fan_retractor</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Endo Fan Retractor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#endo_fan_retractor</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Endo Retraktor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#endoscope</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An endoscope is an instrument which can be introduced into the body to give a view of its internal parts
+
+[www.oxforddictionaries.com in Jan 2015]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#endoscope</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Endoskop</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#endoscope</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">endoscope</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#endoscope</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">endoscope</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#endoscopic_babcock_grasper</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A babock grasper is an atraumatic grasper with curved jaw parts. It is used for grasping and encircling delicate strutures such as the ureters, fallopian tubes, ovaries, appendix, or bowl.
+
+[&quot;1x1 der chirurgischen Instrumente: Benennen, Erkennen, Instrumentieren&quot; M.Liehn and H.Schlautmann in 2011, p.62]
+
+[&quot;Surgical instrumentation&quot; by Renee Nemitz in 2013: &quot;endoscopic babcock forcep&quot;]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#endoscopic_babcock_grasper</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Greifer nach Babcock für die Endoskopie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#endoscopic_babcock_grasper</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">endoscopic babcock grasper</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#endoscopic_light</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An endoscopic light is a light  that is part of an endoscope.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#endoscopic_light</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Endoskoplicht</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#endoscopic_light</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">endoscopic light</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#endoscopic_light</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">lumière d&apos;un endoscope</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#endoscopic_scissor</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An endoscopic scissor is an instrument to cut and dissect tissues, ducts, vessels and suture material. It has usually a rounded, blunt tip with curved blades.
+
+[&quot;Surgical instrumentation&quot; by Renee Nemitz in 2013]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#endoscopic_scissor</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Schere für die Endoskopie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#endoscopic_scissor</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">endoscopic scissor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#endoscopic_ultrasound</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An endoscopic ultrasound is an endoscope with an integrated ultrasound transducer at the end which allows the close positioning of the transducer at the region of interest.
+
+[www.olympus-europa.com in jan 2015]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#endoscopic_ultrasound</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ultraschall für die Endoskopie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#endoscopic_ultrasound</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">endoscopic ultrasound</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#equipment_quality</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An equipment quality is a typical characteristic for an equipment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#equipment_quality</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Qualität einer Ausstattung</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#equipment_quality</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">equipment quality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#equipment_quality</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">qualité d&apos;un équipement médical</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#formation_of_smoke</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A formation of smoke takes place if some tissue is coagulated e.g.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#formation_of_smoke</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Rauchentwicklung</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#formation_of_smoke</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">formation du fumeur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#formation_of_smoke</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">formation of smoke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#gas_volume</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The gas volume describes the volume.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#gas_volume</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Gasvolumen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#gas_volume</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">gas volume</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#gas_volume</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">volume de gaz</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#has_surgical_phase</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">a le phase chirurgical</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#has_surgical_phase</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">describes the relation of a process or procedure to a surgical phase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#has_surgical_phase</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has surgical phase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#has_surgical_phase</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hat chirurgische Phase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#has_surgical_step</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">describes the relation of a step during a surgery or process to the surgery process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#has_surgical_step</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">a le step chirurgical</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#has_surgical_step</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has surgical step</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#has_surgical_step</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hat den chirurgischen Step</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#i-hook</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An J-hook Cauter is used for electrosurgical dissection of tissues and cauterizing vessels.
+
+A long cylinder-insulated rod with an j-shaped monopolar tip. Depending an model and manufacturer, the eletrode can be reusable or disposable and may attach to a monopolar cord or directly to the ESU pencil.
+
+[&quot;Surgical instruments&quot; by Renee Nemitz in 2013]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#i-hook</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">i-hook</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#i_hook</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An I-hook Cauter is used for electrosurgical dissection of tissues and cauterizing vessels.
+
+A long cylinder-insulated rod with an I-shaped monopolar tip. Depending an model and manufacturer, the eletrode can be reusable or disposable and may attach to a monopolar cord or directly to the ESU pencil.
+
+[&quot;Surgical instruments&quot; by Renee Nemitz in 2013]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#i_hook</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">I Hook</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#i_hook</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">I Hook</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#i_hook</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">I Hook</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#insufflator</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An isufflator is used to inhale something (such as a gas, powder, or vapor) into a body cavity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#insufflator</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Insufflator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#insufflator</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">insufflateur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#insufflator</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">insufflator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#insufflator_quality</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An insufflator quality is a qualty that descirbes the characteristic of an insufflator.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#insufflator_quality</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Qualität eines Insufflator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#insufflator_quality</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">insufflator quality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#insufflator_quality</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">qualité d&apos;un insufflateur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#intensity</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The intensity describes the intense that is emitted by a light source.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#intensity</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Intensität</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#intensity</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">intensity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#intensity</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">intensité</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#irrigator</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A irrigator is a device that has the function to wash out an organ or wound with a continuous flow of water or medication.
+
+[www.oxforddictionaries.com in Jan 2015]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#irrigator</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Irrigator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#irrigator</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">irrigateur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#irrigator</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">irrigator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#j-hook</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An J-hook Cauter is used for electrosurgical dissection of tissues and cauterizing vessels.
+
+A long cylinder-insulated rod with an j-shaped monopolar tip. Depending an model and manufacturer, the eletrode can be reusable or disposable and may attach to a monopolar cord or directly to the ESU pencil.
+
+[&quot;Surgical instruments&quot; by Renee Nemitz in 2013]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#j-hook</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">J Hook</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#j-hook</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">J Hook</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#j-hook</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">J Hook</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#l-hook</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An L-hook Cauter is used for electrosurgical dissection of tissues and cauterizing vessels.
+
+A long cylinder-insulated rod with an L-shaped monopolar tip. Depending an model and manufacturer, the eletrode can be reusable or disposable and may attach to a monopolar cord or directly to the ESU pencil.
+
+[&quot;Surgical instruments&quot; by Renee Nemitz in 2013]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#l-hook</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">L Hook</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#l-hook</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">L Hook</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#l-hook</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">L hook</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#laparoscopic_material</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Objects that are needed during a laparoscopic surgery.
+
+[www.oxforddictionaries.com in Jan 2015]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#laparoscopic_material</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Material für die Laparoskopie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#laparoscopic_material</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">laparoscopic material</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#laparoscopic_material</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">petit matériel laparoscopique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#laparoscopic_proctocolectomy</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The laparascopic proctocolectomy is a surgical removal of the rectum and all or part of the colon by using a laparoscopic method.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#laparoscopic_proctocolectomy</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Proktokolektomie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#laparoscopic_proctocolectomy</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">proctocolectomie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#laparoscopic_proctocolectomy</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">proctocolectomy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#laparoscopy</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A laparoscopy is a part of a surgical process during which an endoscope that is placed into the peritoneal cavity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#laparoscopy</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Laparoskopie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#laparoscopy</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">laparoscopy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#laparoscopy</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">laparoskopie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#ligasure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">LigaSure works by applying a precise amout of bipolar energy and pressure to change the nature of the vessel wall. The collagen and elastin within the vessel walls fuse and reform into a single structure, obliterating the lumen and creating a permanent seal.
+
+The system consists of a bipolar radio frequency generator and forceps. The instruments are designed to mimic standard surgical clamps. 
+
+[&quot;Surgical instruments&quot; by Renee Nemitz in 2013]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#ligasure</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">LigaSure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#ligasure</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">LigaSure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#ligasure</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">LigaSure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#light_source</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A source that emits light</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#light_source</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Lichtquelle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#light_source</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">light source</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#light_source</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">source lumineuse</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#light_source_quality</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The light source quality describes the typical characteristic of a light source.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#light_source_quality</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Qualität einer Lichtquelle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#light_source_quality</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">light source quality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#light_source_quality</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">qualité d&apos;une source de lumière</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#mobilisation_of_colon</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The mobilisation of the colon starts with the division of the sigmoid colon&apos;s mesenteric. The next step is the blood vessels&apos; disscetion and further mobilization of the descending colon and the splenic flexure. The last step is the evaluation of the resected colon.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#operational_state</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The power status of an equipment describes the status of the equipment, wether it is turned on or off.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#operational_state</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Betriebszustand</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#operational_state</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">operational state</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#operational_state</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">état de functionnement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#overholt_forceps</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An overholt is atraumatic forcep that is used for laparoscopic dissection. 
+
+[&quot;OP-Handbuch&quot; by M.Liehn, L.Steinmüller, J.R. Döhler in 2011, p.139]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#overholt_forceps</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Overholt Klemme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#overholt_forceps</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">overholt forceps</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#port</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A port is the umbrella term for all accesses through the abdominal with all parts during a laparoscopic surgery,
+
+[&quot;OP-Handbuch&quot; by M.Liehn, L.Steinmüller, R.Döhler in 2011]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <IRI>#port</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Zugang</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#port</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Port</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#port</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">port</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#resection_of_rectum</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This phase is the resection of the rectum. Therefore the stapler is intruced and fired to transect the rectum. Thereafter the rectum is hold by grasping forceps and moved to the upper abdominal cavity. In the end of this phase criticall structures eg ureter, urinary bladder, nerves and the muscles of the pelvic floor are inspected for injury.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#single_port</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A single port is an acces for laparoscopic instruments. The laparascopic instruments enter the abdominal through a single access, it reduces the incisions and leaves a hidden cicatrice by placing it on the umbilicus.
+
+[&quot;Medizintechnik - Verfahren, Systeme, Informationsverarbeitung&quot; by Rüdiger Kramme in 2011 p. 397]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#single_port</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">LESS by Olympus; SILS by Covidien; ENDOCONE System by Karl Storz
+
+[&quot;OP-Handbuch&quot; by M.Liehn, L.Steinmüller, J.R. Döhler in 2011, p.137]
+[www.karlstorz.com in Jan 2015]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#single_port</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Single Port</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#single_port</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">single port</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#specimen_bag</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A specimen bag is used to retrieve and contain specimen during endoscopic removal while minimizing the spillage of contaminates into the abdominal cavity.
+They exist in different sizes dependig on the specimen size which should be removed.
+
+[&quot;Surgical instrumentation&quot; by Renee Nemitz in 2011; Comment: Nemitz calls it Endo Catch, Endo Pouch or Endosac. Manufacturer also label it as &quot;specimen bag&quot; or &quot;specimen retrieval bag&quot; which led through the definition as &quot;specimen bag&quot; for this ontology]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#specimen_bag</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Bergesack</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#specimen_bag</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">specimen bag</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#supply_pressure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The supply pressure describes the pressure coming out of the insufflator.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#supply_pressure</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Quelldruck</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#supply_pressure</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">pression d&apos;alimentation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#supply_pressure</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">supply pressure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#surgical_drain</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A surgical drain is a tube that causes or allows liquid to run out of a wound.
+
+[www.oxforddictionaries.com in Jan 2015]
+[&quot;OP-Handbuch&quot; by M.Liehn, L.Steinmüller, J.R. Döhler in 2011, p.24]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#surgical_drain</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Wunddrainage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#surgical_drain</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">surgical drain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#swab_holder</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Tupfer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#swab_holder</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">swab holder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#target_flow</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The target flow ist the amount of flow that should ideallly be archieved</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#target_flow</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Soll-Fluss</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#target_flow</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">flux objectif</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#target_flow</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">target flow</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#target_pressure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The target pressure describes the pressure that should ideally be archieved.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#target_pressure</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Soll-Druck</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#target_pressure</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">pression objectif</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#target_pressure</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">target pressure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#team_time_out</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This phase contains a team introduction and a short briefing. During the briefing the patient data is confirmed and all relevant diagnostic data presented. The surgeon reviews milestones and critical moments of the surgery. After this the surgery is approved.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#trocar</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A trocar is an lense tube that retracts the incision of the veress needle, prevents the escape of the CO2 in the pneumoperitoneum and enables the access for laparoscopic instruments through the abdominal.
+
+[&quot;OP-Handbuch&quot; by M.Liehn, L.Steinmüller, R.Döhler in 2011]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#trocar</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Trokar</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#trocar</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">trocar</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#trocar</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">trocart</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#veress_needle</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A veress needle is used to create a pneumoperitoneum. It is used to create an access to the abdominal by a puncture usually by an incision close to the umbilicus.The abdominal wall is then lifted by the insufflating CO2 and helps the surgeon to introduce the trocar.
+
+[&quot;OP-Handbuch&quot; by M.Liehn, L.Steinmüller, R.Döhler in 2011 p.137]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#veress_needle</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Aiguille de Veress</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#veress_needle</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Veress Nadel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#veress_needle</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">veress needle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#vessel_resection</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This phase contains the resection of the inferior mesenteric artery and vein. Therefore the first step is to localize the vessels, seperate them and the cliping. To do so it is necessary to localize the illiacal bifurcation and to open the peritoneum along the aorta.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#white_balance</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The white balance describes the global adjustment of the intensities of the colors</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#white_balance</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Weißabgleich</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#white_balance</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">balance des blancs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#white_balance</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">white balance</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

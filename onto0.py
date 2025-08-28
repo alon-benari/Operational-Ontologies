@@ -27,7 +27,7 @@ with onto:
         domain = [Bacterium]
         range = [Shape] 
 
-    class has_grouping(Bacterium >> Group, FunctionalProperty):
+    class has_grouping(Bacterium >> Group, ObjectProperty):
         pass
 
     class gram_positive(Bacterium >> bool, FunctionalProperty):
@@ -37,7 +37,18 @@ with onto:
     class has_rare_property(has_shape): 
         pass
 
+obo = onto.get_namespace("http://purl.obolibrary.org/obo/")
 
 ## creating individuals
 
 my_bacterium = Bacterium()
+
+
+## Instantiating a more complex individual
+my_bacterium2 = Bacterium ( "complexBacterium",
+                           gram_positive = True,
+                           has_shape = RodShape(),
+                           has_grouping = [Isolated()]
+)
+
+

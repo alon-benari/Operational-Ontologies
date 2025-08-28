@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/MPATH-for-ontoSPM.owl" uri="file:/home/julliard/Desktop/sfb_wissensmodellierung/OntoSPM/MPATH_for_OntoSPM.owl"/>
+    <uri id="User Entered Import Resolution" name="http://ontofox.hegroup.org/UO_for_SPM.owl" uri="file:/home/julliard/Desktop/sfb_wissensmodellierung/OntoSPM/UO_for_SPM.owl"/>
+    <uri id="User Entered Import Resolution" name="http://ontofox.hegroup.org/PATO_for_SPM.owl" uri="file:/home/julliard/Desktop/sfb_wissensmodellierung/OntoSPM/PATO_for_SPM.owl"/>
+    <uri id="User Entered Import Resolution" name="http://ontofox.hegroup.org/IAO_for_SPM.owl" uri="file:/home/julliard/Desktop/sfb_wissensmodellierung/OntoSPM/IAO_for_SPM.owl"/>
+    <uri id="User Entered Import Resolution" name="http://ontofox.hegroup.org/FMA_for_SPM.owl" uri="file:/home/julliard/Desktop/sfb_wissensmodellierung/OntoSPM/FMA_for_SPM.owl"/>
+    <uri id="User Entered Import Resolution" name="http://medicis/spm.owl/OntoSPM" uri="file:/home/julliard/Desktop/sfb_wissensmodellierung/OntoSPM/151112_OntoSPM_RDF.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1653478669810" name="http://ontofox.hegroup.org/FMA_for_LapOntoSPM.owl" uri="FMA_for_LapOntoSPM.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1653478669810" name="http://www.semanticweb.org/darko/ontologies/2014/9/150518_LapOntoSPM" uri="150518_LapOntoSPM.owl"/>
+    </group>
+</catalog>
