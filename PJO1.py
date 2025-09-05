@@ -33,6 +33,8 @@ with hoo:
         '''
         pass
     InteractionType.label = ["A type of interaction that can occur."]
+    
+
     class hasTimestamp(InteractionType >> str, DataProperty, FunctionalProperty):
         '''
         Associate a timestamp with the interaction type.
@@ -42,13 +44,18 @@ with hoo:
 #### Infrastructure
 ## All things hardware used in the organization from building, to servers   and their attributes.
 
-class Infrastructure(Thing):
-    ''''
-    All things hardware used in the organization from building, to servers and their attributes.    
-    '''
-    pass
-class Location(Infrastructure):
-    '''Any physical location in the organizartion'''
+    class Infrastructure(Thing):
+        ''''
+        All things hardware used in the organization from building, to servers and their attributes.    
+        '''
+        pass
+
+    class hasLocation(FunctionalProperty):
+        '''physical location in the organizartion'''
+        
+        domain = [Infrastructure]
+        range = [str] # bascially the address of the location
+        pass
 
 
 
@@ -58,6 +65,8 @@ class Location(Infrastructure):
     class Caregiver(Thing):
         pass
     Caregiver.label = ["A person who provides care to patients."]
+        
+
     class hasName(Caregiver >> str, DataProperty, FunctionalProperty):
         '''
         Associate the name of the caregiver.
@@ -65,7 +74,7 @@ class Location(Infrastructure):
         pass
 
 
-###Caregiver
+###Caregiver types.
     class Person(Thing):
         '''A person in the organization.  '''
         pass
@@ -73,13 +82,11 @@ class Location(Infrastructure):
         '''
         Associate the name of the caregiver'''
         pass
-
-
-    class Caregiver(Person):
+    class hasId(Caregiver >> str, DataProperty, FunctionalProperty):
+        '''
+        Associate an identifier with the caregiver.
+        '''
         pass
-    
-
-    Caregiver.label = ["A person who provides care to patients."]
 
     
 
@@ -126,11 +133,22 @@ class Location(Infrastructure):
 
     
 ##   Patient Centered Events.
+    '''
+        Patient Interaction are type of Action.  There are several types:
+        f2f_encounter:
+        TH_encounter:
+        digital_encoutner : if at some point in the future there will be a bot to manage this encounter
+        procedure: Is a type of an interaction where any procedure is effected on the patient.
+        
+
+    '''
     class PatientInteraction(Action):
         '''
         A key node for interaction with patients.
         having an encounter, a procedure
         '''
+        pass
+
     class hasType(PatientInteraction >> InteractionType(), DataProperty):
         '''
         Associate a type with the patient interaction.
@@ -161,6 +179,13 @@ class Location(Infrastructure):
         An encounter that is carried out digitally, either telehealth
         '''
         pass
+    
+
+    class Admin_action(InteractionType):
+        '''
+        A class for administrative interaction, scheduling, cancellation, payments'''
+        pass
+
 
     class Procedure(InteractionType):
         '''
@@ -168,7 +193,7 @@ class Location(Infrastructure):
         '''
         pass
 
-    class scheduling(InteractionType):
+    class scheduling(Admin_action):
         '''
         The process of scheduling an appointment or procedure ( therapeutic /diagnostic/both) for the patient.
         '''
@@ -207,7 +232,7 @@ class Location(Infrastructure):
         pass
     orderedBy.comment = ["The caregiver who ordered the diagnostic test."]
 
-    class orderedTimeStamp(Objectiv>> str, DataProperty):
+    class orderedTimeStamp(ObjectiveData>> str, DataProperty):
         '''
         A property to annotate the time the test was ordered
         '''
@@ -268,6 +293,8 @@ class Location(Infrastructure):
         pass
     hasInteraction.comment = ["The type of interaction the patient had."]
 
+
+
     class paymentModality(Thing):
         '''
         A class to model payment modalities
@@ -302,5 +329,7 @@ class Location(Infrastructure):
 
 
 ### Care plan
+
+
 
     
