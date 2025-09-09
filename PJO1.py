@@ -110,10 +110,18 @@ with hoo:
 
     class Patient(Thing):
         pass
+
     class hasName(Patient >> str, DataProperty, FunctionalProperty):
         '''
         Associate the name of the patient'''
         pass
+
+    class hasId(Patient >> str, DataProperty, FunctionalProperty):
+        '''
+        Associate an identifier with the patient.
+        '''
+        pass
+
 
 
 
@@ -154,6 +162,13 @@ with hoo:
         Associate a type with the patient interaction.
         '''
         pass
+
+    class hasInteractionType():
+        '''
+        A class to define the interaction type'''
+        domain = [InteractionType]
+        range = [str]
+
 
 
     class f2f_encounter(InteractionType):
@@ -204,7 +219,7 @@ with hoo:
 
 
 
-##### Objective data ( labs, imaging, other test,  etc.)   
+#####e data ( labs, imaging, other test,  etc.)   
 
     class ObjectiveData(Thing):
         '''
@@ -323,12 +338,6 @@ with hoo:
         pass
     hasCryptoPayment.comment = ["Indicates a crypto payment modality."]
 
-
-
-### orders
-
-
-### Care plan
 
 
 
