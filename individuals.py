@@ -10,12 +10,16 @@ patient1.hasId = "A12345" # Assigning an ID to the patient
 import networkx as nx
 import matplotlib.pyplot as plt
 
+# get the classes (types) of the individual
+get_class  = lambda x: [(x.name,'rdf:type',cls.name) for cls in x.is_a]
+# get properties for a given individual it return a tuple of a triplet.
+get_properties = lambda x: [(x.name,prop.name, getattr(x, prop.name)) for prop in x.get_properties()]
+
+triples = get_class(patient1) + get_properties(patient1)
+
+
 # Example RDF triples
-triples = [
-    ("patient1", "hasName", "John Doe"),
-    ("patient1", "rdf:type", "Patient"),
-    ("patient1", "hasId", "12345")
-]
+
 
 ''''''
 G = nx.DiGraph()
