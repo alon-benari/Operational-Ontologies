@@ -38,6 +38,7 @@ with hoo:
     class hasTimestamp(InteractionType >> str, DataProperty, FunctionalProperty):
         '''
         Associate a timestamp with the interaction type.
+        str -  datetime format time stamp.
         '''
         pass
 
@@ -110,6 +111,12 @@ with hoo:
 
     class Patient(Thing):
         pass
+    class hasAge(Patient >> int, DataProperty, FunctionalProperty):
+        '''
+        Associate the age of the patient.
+        '''
+        pass        
+
 
     class hasName(Patient >> str, DataProperty, FunctionalProperty):
         '''
@@ -142,7 +149,7 @@ with hoo:
     
 ##   Patient Centered Events.
     '''
-        Patient Interaction are type of Action.  There are several types:
+        Patient are type of Action.  There are several types:
         f2f_encounter:
         TH_encounter:
         digital_encoutner : if at some point in the future there will be a bot to manage this encounter
@@ -207,6 +214,24 @@ with hoo:
         A medical procedure performed on the patient.
         '''
         pass
+
+    class procedurePerformedOn(ObjectProperty):
+        '''
+        A property to annotate the procedure performed on the patient.
+        '''
+        domain = [Procedure]
+        range = [Patient]
+        #inverse_property = hasUndergoneProcedure()
+
+    class hasUndergoneProcedure(ObjectProperty): 
+        '''
+        A property to annotate the procedure the patient has undergone.
+        This is the inverse of procedurePerformedOn
+        '''
+        domain = [Patient]
+        range = [Procedure]
+        inverse_property = procedurePerformedOn()
+        
 
     class scheduling(Admin_action):
         '''
