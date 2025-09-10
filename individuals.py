@@ -12,7 +12,8 @@ rpp = Procedure("rpp")
 #patient1.hasUndergoneProcedure.append(rpp)
 #
 f2f = InteractionType("f2f")
-rpp.hasInteractionType = f2f
+
+patient1.hasInteraction.append(f2f)
 rpp.hasTimestamp = "2023-10-01T10:00:00"
 
 

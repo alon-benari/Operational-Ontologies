@@ -326,7 +326,7 @@ with hoo:
         '''
         pass
 
-    class hasInteraction(Patient>>PatientInteraction, ObjectProperty):
+    class hasInteraction(Patient>>InteractionType, FunctionalProperty):
         '''
         A property to annotate the type of interaction the patient had
         '''
