@@ -215,23 +215,31 @@ with hoo:
         '''
         pass
 
-    class procedurePerformedOn(ObjectProperty):
+
+
+    class procedurePerformedOn(Procedure>>Patient): 
         '''
         A property to annotate the procedure performed on the patient.
         '''
-        domain = [Procedure]
-        range = [Patient]
-        #inverse_property = hasUndergoneProcedure()
+        inverse_property = None  # placeholder
+       
+      
 
-    class hasUndergoneProcedure(ObjectProperty): 
+    class hasUndergoneProcedure(Patient >> Procedure): 
         '''
         A property to annotate the procedure the patient has undergone.
         This is the inverse of procedurePerformedOn
         '''
-        domain = [Patient]
-        range = [Procedure]
-        inverse_property = procedurePerformedOn()
         
+        inverse_property = procedurePerformedOn
+
+    procedurePerformedOn.inverse_property = hasUndergoneProcedure
+
+    class hasProcedureDoneDatetime(Patient >> str, DataProperty, FunctionalProperty):
+        '''
+        The datetime when the procedure was done for the patient.
+        '''
+        pass
 
     class scheduling(Admin_action):
         '''
@@ -326,12 +334,12 @@ with hoo:
         '''
         pass
 
-    class hasInteraction(Patient>>InteractionType, FunctionalProperty):
+    class hasPatientInteraction(Patient>>InteractionType, FunctionalProperty):
         '''
         A property to annotate the type of interaction the patient had
         '''
         pass
-    hasInteraction.comment = ["The type of interaction the patient had."]
+    hasPatientInteraction.comment = ["The type of interaction the patient had."]
 
 
 
