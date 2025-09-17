@@ -29,15 +29,29 @@ with hoo:
 
     class InteractionType(Thing):
         '''
-        A class to denote the type of interaction.
+        A class to denote the type of interaction the patient had with the healthcare system.
         '''
         pass
+    class hasPurpose(InteractionType >> str, DataProperty, FunctionalProperty):
+        '''
+        Associate a purpose with the interaction type.
+        str -  purpose of the interaction.
+        '''
+        pass
+
     InteractionType.label = ["A type of interaction that can occur."]
     
 
-    class hasTimestamp(InteractionType >> str, DataProperty, FunctionalProperty):
+    class hasPlannedTimestamp(InteractionType >> str, DataProperty, FunctionalProperty):
         '''
         Associate a timestamp with the interaction type.
+        str -  datetime format time stamp.
+        '''
+        pass
+
+    class hasActualTimestamp(InteractionType >> str, DataProperty, FunctionalProperty):
+        '''
+        Associate a planned timestamp with the interaction type.
         str -  datetime format time stamp.
         '''
         pass
@@ -157,6 +171,20 @@ with hoo:
         
 
     '''
+    class ModalityType(Thing):
+        '''
+        A class to define the modality used in the interaction  i..e f2f, virtual, digital, phone, procedure, admin action
+        '''
+        pass
+
+    
+
+    class usesModality(Patient >> ModalityType):
+        '''
+        Associate a type with the patient interaction.
+        '''
+        pass
+
     class PatientInteraction(Action):
         '''
         A key node for interaction with patients.
@@ -164,19 +192,17 @@ with hoo:
         '''
         pass
 
-    class hasType(PatientInteraction >> InteractionType(), DataProperty):
-        '''
-        Associate a type with the patient interaction.
-        '''
-        pass
+    
 
-    class hasInteractionType():
+    class hasModalityType():
         '''
         A class to define the interaction type'''
         domain = [InteractionType]
-        range = [str]
+        range = [str]  # A closed set of interaction types f2f, virtual, digital, phone, procedure, admin action
 
 
+   
+##########################
 
     class f2f_encounter(InteractionType):
         '''
@@ -196,22 +222,19 @@ with hoo:
         '''
         pass
 
-    class digital_encounter(InteractionType):
-        '''
-        An encounter that is carried out digitally, either telehealth
-        '''
-        pass
+ 
     
 
     class Admin_action(InteractionType):
         '''
-        A class for administrative interaction, scheduling, cancellation, payments'''
-        pass
-
+        A class for administrative interaction, scheduling, cancellation, payments
+        '''
+        
+###################################################
 
     class Procedure(InteractionType):
         '''
-        A medical procedure performed on the patient.
+            A medical procedure performed on the patient.
         '''
         pass
 
