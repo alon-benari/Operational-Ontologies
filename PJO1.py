@@ -32,6 +32,9 @@ with hoo:
         A class to denote the type of interaction the patient had with the healthcare system.
         '''
         pass
+
+
+
     class hasPurpose(InteractionType >> str, DataProperty, FunctionalProperty):
         '''
         Associate a purpose with the interaction type.
@@ -173,7 +176,7 @@ with hoo:
     '''
     class ModalityType(Thing):
         '''
-        A class to define the modality used in the interaction  i..e f2f, virtual, digital, phone, procedure, admin action
+        A class to define the modality used in the interaction  i..e f2f, virtual, digital, phone
         '''
         pass
 
@@ -192,6 +195,19 @@ with hoo:
         '''
         pass
 
+    class interactionHasModality(InteractionType >> ModalityType, DataProperty, FunctionalProperty):
+        '''
+        Associate a modality with the interaction type.
+        ModalityType-  modality of the interaction.
+        '''
+        pass
+
+    class modalityAppliedToInteraction(ModalityType >> InteractionType, ObjectProperty):
+        '''
+        A property to annotate the modality applied to the interaction type.
+        This is the inverse of interactionHasModality
+        '''
+        inverse_property = interactionHasModality   
     
 
     class hasModalityType():
