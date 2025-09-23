@@ -194,7 +194,7 @@ with hoo:
         having an encounter, a procedure
         '''
         pass
-
+    """
     class interactionHasModality(InteractionType >> ModalityType, DataProperty, FunctionalProperty):
         '''
         Associate a modality with the interaction type.
@@ -207,16 +207,14 @@ with hoo:
         A property to annotate the modality applied to the interaction type.
         This is the inverse of interactionHasModality
         '''
-        inverse_property = interactionHasModality   
+        inverse_property = interactionHasModality  
+        """   
     
 
-    class hasModalityType():
+    class hasModalityType(InteractionType >> str, DataProperty, FunctionalProperty):
         '''
         A class to define the interaction type'''
-        domain = [InteractionType]
-        range = [str]  # A closed set of interaction types f2f, virtual, digital, phone, procedure, admin action
-
-
+        pass
    
 ##########################
 
