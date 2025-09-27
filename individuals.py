@@ -3,21 +3,44 @@ from PJO1 import  *
 
 import networkx as nx
 
+
+#
+
+### Scenario Scheduling
+def destroy():
+    destroy_entity(patient1)
+    destroy_entity(schedule)
+    destroy_entity(call_center)
+    destroy_entity(encounter)
+    hoo.save
+#
+
+
 patient1 = Patient("patient1")
 patient1.hasAge = 45  # Assigning an age to the patient
 patient1.hasName = "John Adams" # Assigning a name to the patient
 patient1.hasId = "A12345" # Assigning an ID to the patient
-# Define a procedure and link it to the patient
-rpp = Procedure("rpp")
-#patient1.hasUndergoneProcedure.append(rpp)
 #
-rpp.procedurePerformedOn.append(patient1)
-# Define an interaction type and link it to the patient
-f2f = InteractionType("f2f")
+encounter = InteractionType('encntr')
+encounter.hasPurpose = 'Scheduleing'
+encounter.hasModalityType = "call center"
 
-patient1.hasPatientInteraction = f2f
-rpp.hasTimestamp = "2023-10-01T10:00:00"
-patient1.hasProcedureDoneDatetime = rpp.hasTimestamp
+# Scheduling Interaction
+schedule = InteractionType('schedule')
+schedule.hasPurpose = "Scheduling"
+schedule.hasTimestamp = "2025-09-09 12:00:00"
+patient1.hasPatientInteraction = schedule
+
+
+
+
+call_center = ModalityType('Call_Center')
+call_center.modalityAppliedToPatient.append(patient1)
+
+
+scheduling_encounter = Encounter('scheduling_encounter')
+
+
 
 
 
@@ -63,22 +86,15 @@ def draw_k_graph(triples):
     for s, p, o in triples:
         G.add_edge(s, o, label=p)
 
-    pos = nx.spring_layout(G)
-    nx.draw(G, pos, with_labels=True, node_color='lightblue', node_size=2000, font_size=10)
+    pos = nx.circular_layout(G)
+    nx.draw(G, pos, with_labels=True, node_color='lightblue', node_size=2000, font_size=6)
 
     # Draw edge labels (properties)
     edge_labels = nx.get_edge_attributes(G, 'label')
     nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels, font_color='red')
     plt.show()
     #plt.savefig("knowledge_graph.png")  # Save the graph as a PNG file
-'''
-patient1.get_properties()
-Out[105]: {healthops.hasId, healthops.hasName}
 
-In [106]: list(patient1.get_properties())
-Out[106]: [healthops.hasName, healthops.hasId]
-
-'''
 
 
 

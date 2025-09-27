@@ -27,13 +27,16 @@ with hoo:
         pass
     Timestamp.label = ["A timestamp attribute to be used by many classes."]
 
+# Interaction Type is a basic  interaction type, this will determine the kind of encounter the patient had with the 
+# healthcare system.
+# the patient may undergo.
+
     class InteractionType(Thing):
         '''
         A class to denote the type of interaction the patient had with the healthcare system.
+        scheduling
         '''
         pass
-
-
 
     class hasPurpose(InteractionType >> str, DataProperty, FunctionalProperty):
         '''
@@ -179,13 +182,27 @@ with hoo:
         A class to define the modality used in the interaction  i..e f2f, virtual, digital, phone
         '''
         pass
+    class modalityName(ModalityType >> str, DataProperty, FunctionalProperty):
+        '''
+        A class to define the modality name'''
+        pass    
+
+    class modalityAppliedToPatient(ModalityType >> Patient, ObjectProperty):
+        '''
+        A property to annotate the modality applied to the patient.
+        This is the inverse of usesModality
+        '''
+        inverse_property = None  # placeholder
+        pass
 
     
 
     class usesModality(Patient >> ModalityType):
         '''
-        Associate a type with the patient interaction.
+        Associate a type with the patient modality.
         '''
+        inverse_property = modalityAppliedToPatient  # placeholder
+
         pass
 
     class PatientInteraction(Action):
@@ -194,55 +211,55 @@ with hoo:
         having an encounter, a procedure
         '''
         pass
-    """
-    class interactionHasModality(InteractionType >> ModalityType, DataProperty, FunctionalProperty):
-        '''
-        Associate a modality with the interaction type.
-        ModalityType-  modality of the interaction.
-        '''
-        pass
-
-    class modalityAppliedToInteraction(ModalityType >> InteractionType, ObjectProperty):
-        '''
-        A property to annotate the modality applied to the interaction type.
-        This is the inverse of interactionHasModality
-        '''
-        inverse_property = interactionHasModality  
-        """   
-    
+   
 
     class hasModalityType(InteractionType >> str, DataProperty, FunctionalProperty):
         '''
         A class to define the interaction type'''
         pass
    
-##########################
+### Encounters -  a type of patient interaction
 
-    class f2f_encounter(InteractionType):
+    class Encounter(InteractionType):
+       '''A patient centered event that focuses on clinical mngmnt.
+       this basic class models the encounter
+       InteractionType  has relevant properties like hasPurpose, 
+       hasPlannedTimestamp, hasActualTimestamp which can be useful
+         '''
+       pass
+
+    class encounterHasModality(Encounter >> ModalityType, ObjectProperty):
         '''
-        The equivalent of an f2f encounter
-        Patient centered event that focuses on clinical mngmnt in a f2f setting.'''
+        A property to annotate the modality applied to the encounter.
+        f2f , telehealth, digital
+        private, group
+        inverse_property = None  # placeholder
+        '''
+        pass    
+
+    class encounterHasType(Encounter >> str, DataProperty, FunctionalProperty):
+        '''
+        A property to annotate the type of encounter.
+        str -  appointment, procedure, followup, emergency, 
+                routine, urgent care, ED-visit,
+
+        '''
+        pass
+    class encounterHasSetting(Encounter >> str, DataProperty, FunctionalProperty):
+        '''
+        A property to annotate the setting of the encounter.
+        str -  inpatient, outpatient, home, virtual, nursing home, hospice
+        '''
         pass
 
-    class telehealth_encounter(InteractionType):
+    class encounterHasLoction(Encounter >> Location, ObjectProperty):
         '''
-        An encounter that is carried out digitally, either telehalth
-        '''
-        pass
-
-    class digital_encounter(InteractionType):
-        '''
-        An encounter that is carried out digitally, bot lead.
+        A property to annotate the location of the encounter.
         '''
         pass
-
- 
     
 
-    class Admin_action(InteractionType):
-        '''
-        A class for administrative interaction, scheduling, cancellation, payments
-        '''
+
         
 ###################################################
 
@@ -278,11 +295,7 @@ with hoo:
         '''
         pass
 
-    class scheduling(Admin_action):
-        '''
-        The process of scheduling an appointment or procedure ( therapeutic /diagnostic/both) for the patient.
-        '''
-        pass
+    
 
 
 ##### ## Medication ontology obo -  how to leverage it
@@ -376,7 +389,6 @@ with hoo:
         A property to annotate the type of interaction the patient had
         '''
         pass
-    hasPatientInteraction.comment = ["The type of interaction the patient had."]
 
 
 
