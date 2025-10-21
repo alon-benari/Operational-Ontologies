@@ -423,6 +423,16 @@ with hoo:
         A class to model payment modalities
         '''
         pass
+    class hasPaymentAmount(paymentModality >> float, DataProperty, FunctionalProperty):
+        '''
+        Associate a payment amount with the payment modality.
+        '''
+        pass
+    class hasPaymentCurrency(paymentModality >> str, DataProperty, FunctionalProperty):
+        '''
+        Associate a payment currency with the payment modality.
+        '''
+        pass
 
     class hasCashPayment(financial_event >> paymentModality, ObjectProperty):
         '''
