@@ -1,5 +1,7 @@
 from owlready2 import *
+from owlready2 import get_ontology, onto_path
 # health ops ontology
+
 hoo = get_ontology("http://test.org/healthops.owl#") 
 
 with hoo:
@@ -220,7 +222,7 @@ with hoo:
    
 ### Encounters -  a type of patient interaction
 
-    class Encounter(InteractionType):
+    class Encounter(Thing):
        '''A patient centered event that focuses on clinical mngmnt.
        this basic class models the encounter
        InteractionType  has relevant properties like hasPurpose, 
@@ -255,6 +257,30 @@ with hoo:
     class encounterHasLoction(Encounter >> Location, ObjectProperty):
         '''
         A property to annotate the location of the encounter.
+        '''
+        pass
+
+    class encounterHasNote(Encounter >> str, DataProperty):
+        '''
+        A property to annotate the notes of the encounter.
+        '''
+        pass
+
+    class encounterHasId(Encounter >> str,  FunctionalProperty):
+        '''
+        A property to annotate the identifier of the encounter.
+        '''
+        pass
+
+    class encounterLinkedToId(Encounter >> str, FunctionalProperty):
+        '''
+        A property to annotate associated encounter identifiers.
+        '''
+        pass    
+
+    class encounterHasCaregiver(Encounter >> Caregiver, ObjectProperty):
+        '''
+        A property to annotate the caregiver involved in the encounter.
         '''
         pass
     
@@ -423,4 +449,6 @@ with hoo:
 
 
 
+
+    
     

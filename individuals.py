@@ -21,9 +21,9 @@ patient1.hasAge = 45  # Assigning an age to the patient
 patient1.hasName = "John Adams" # Assigning a name to the patient
 patient1.hasId = "A12345" # Assigning an ID to the patient
 #
-encounter = InteractionType('encntr')
+encounter = Encounter('encntr')
 encounter.hasPurpose = 'Scheduleing'
-encounter.hasModalityType = "call center"
+encounter.hasModalityType = "Phone"
 
 # Scheduling Interaction
 schedule = InteractionType('schedule')
