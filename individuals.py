@@ -51,17 +51,32 @@ scheduling_encounter = Encounter('scheduling_encounter')
 
 
 
+<<<<<<< HEAD
+=======
+import networkx as nx
+import matplotlib.pyplot as plt
+
+
+def destroy():
+    destroy_entity(patient1)
+    destroy_entity(schedule)
+    destroy_entity(call_center)
+    destroy_entity(encounter)
+    hoo.save
+#
+
+>>>>>>> 37ce7bcc7ffe1ec446df68ecda619358f0366a54
 # get the classes (types) of the individual
 get_class  = lambda x: [(x.name,'rdf:type',cls.name) for cls in x.is_a]
 
 
   
 # get properties for a given individual it return a tuple of a triplet.
-get_properties = lambda x: [(x.name, prop.name, getattr(x, prop.name)) for prop in x.get_properties()]
+get_properties_rdf = lambda x: [(x.name, prop.name, getattr(x, prop.name)) for prop in x.get_properties()]
 
 
 
-def get_properties(individual):
+def get_properties2RDF(individual):
     '''
     A method to return triplets of the form (subject, predicate, object) for the classes of the individual
     '''
@@ -77,7 +92,7 @@ def get_properties(individual):
 
 
 def get_triples(individual):
-    return get_class(individual) + get_properties(individual)
+    return get_class(individual) + get_properties2RDF(individual)
 
 def return_hash(transtion_triples,previous_hash,nonce):
     '''
@@ -196,5 +211,14 @@ def draw_k_graph(triples):
     #plt.savefig("knowledge_graph.png")  # Save the graph as a PNG file
 
 
+## payment time.
+payment = InteractionType('payment')
+payment.hasPurpose = "Payment"
+payment.hasTimestamp = "2025-09-10 15:30:00"
+patient1.hasPatientInteraction = payment
 
-
+financial = financial_event()
+stable_coin = paymentModality('stable_coin')
+financial.hasCryptoPayment = [stable_coin]
+stable_coin.hasPaymentAmount = 150.00
+stable_coin.hasPaymentCurrency = "USDC"
