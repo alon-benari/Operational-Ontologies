@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1760417289620" name="http://ontofox.hegroup.org/FMA_for_LapOntoSPM.owl" uri="FMA_for_LapOntoSPM.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1760417289620" name="http://www.semanticweb.org/darko/ontologies/2014/9/150518_LapOntoSPM" uri="150518_LapOntoSPM.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1760417289620" name="shadowed:http://ontofox.hegroup.org/FMA_for_LapOntoSPM.owl" uri="Assets/lapontospm/LapOnto/FMA_for_LapOntoSPM.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1760417289620" name="shadowed:http://www.semanticweb.org/darko/ontologies/2014/9/150518_LapOntoSPM" uri="Assets/lapontospm/LapOnto/150518_LapOntoSPM.owl"/>
+    </group>
+</catalog>

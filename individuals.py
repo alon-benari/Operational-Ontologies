@@ -1,8 +1,14 @@
 # A running example of how to use the ontology
 from PJO1 import  *
-
+import json
 import networkx as nx
-
+from cryptography.hazmat.backends import default_backend
+from cryptography.hazmat.primitives.asymmetric import rsa
+from cryptography.hazmat.primitives import serialization
+from cryptography.hazmat.primitives.asymmetric import padding
+from cryptography.hazmat.primitives import hashes
+import networkx as nx
+import matplotlib.pyplot as plt
 
 #
 
@@ -21,9 +27,9 @@ patient1.hasAge = 45  # Assigning an age to the patient
 patient1.hasName = "John Adams" # Assigning a name to the patient
 patient1.hasId = "A12345" # Assigning an ID to the patient
 #
-encounter = InteractionType('encntr')
+encounter = Encounter('encntr')
 encounter.hasPurpose = 'Scheduleing'
-encounter.hasModalityType = "call center"
+encounter.hasModalityType = "Phone"
 
 # Scheduling Interaction
 schedule = InteractionType('schedule')
@@ -41,11 +47,9 @@ call_center.modalityAppliedToPatient.append(patient1)
 scheduling_encounter = Encounter('scheduling_encounter')
 
 
+#####
 
 
-
-import networkx as nx
-import matplotlib.pyplot as plt
 
 # get the classes (types) of the individual
 get_class  = lambda x: [(x.name,'rdf:type',cls.name) for cls in x.is_a]
@@ -74,6 +78,102 @@ def get_properties(individual):
 
 def get_triples(individual):
     return get_class(individual) + get_properties(individual)
+
+def return_hash(transtion_triples,previous_hash,nonce):
+    '''
+    A method to return a simple hash representation of the transaction triples
+    '''
+    import hashlib
+    data_string = json.dumps(transtion_triples, sort_keys=True) + previous_hash + str(nonce)
+    return hashlib.sha256(data_string.encode()).hexdigest()
+
+
+def get_keys():
+    '''
+    A method to return a public/private key pair
+    '''
+    from Crypto.PublicKey import RSA
+    private_key = rsa.generate_private_key(
+        public_exponent = 65537,
+        key_size = 2048,
+        backend = default_backend()
+    )
+    
+    public_key = private_key.public_key()
+    return private_key, public_key
+
+def serialize_keys(private_key, public_key):
+    '''
+    A method to serialize the public/private key pair, and wite them to files
+    '''
+    from cryptography.hazmat.primitives import serialization
+    pem_private = private_key.private_bytes(
+        encoding = serialization.Encoding.PEM,
+        format = serialization.PrivateFormat.PKCS8,
+        encryption_algorithm = serialization.NoEncryption()
+    )
+    pem_public = public_key.public_bytes(
+        encoding = serialization.Encoding.PEM,
+        format = serialization.PublicFormat.SubjectPublicKeyInfo
+    )
+
+    with open('private_key.pem', 'wb') as f:
+        f.write(pem_private)
+
+    with open('public_key.pem', 'wb') as f:
+        f.write(pem_public)
+
+    
+def read_keys():
+    with open('private_key.pem', 'rb') as f:
+        private_key = serialization.load_pem_private_key(
+        f.read(),
+        password = None,
+        backend = default_backend()
+)
+    with open('public_key.pem', 'rb') as f:
+        public_key = serialization.load_pem_public_key(
+            f.read(),
+            backend = default_backend()
+        )
+    return private_key, public_key
+
+
+
+def public_encrypt(public_key, message):
+    '''
+    A method to encrypt a message using the public key
+    '''
+   
+    plaintext = message.encode('utf-8')
+    ciphertext = public_key.encrypt(
+        plaintext,
+        padding.OAEP(
+            mgf = padding.MGF1(algorithm=hashes.SHA256()),
+            algorithm = hashes.SHA256(),
+            label = None
+        )
+    )
+    return ciphertext
+
+
+
+def private_decrypt_message(private_key, ciphertext):
+    '''
+    A method to decrypt a message using the private key
+    '''
+    from cryptography.hazmat.primitives.asymmetric import padding
+    from cryptography.hazmat.primitives import hashes
+
+    plaintext = private_key.decrypt(
+        ciphertext,
+        padding.OAEP(
+            mgf = padding.MGF1(algorithm=hashes.SHA256()),
+            algorithm = hashes.SHA256(),
+            label = None
+        )
+    )
+    return plaintext.decode('utf-8')
 
 # Example RDF triples
 
