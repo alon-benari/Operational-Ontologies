@@ -20,7 +20,7 @@ class MediBlock(object):
 
     def hash_block(self) ->str:
         '''
-        A method to return a  sha256 has of the complete block
+        A method to return a  sha256 hash of the complete block
         '''
         block_dict = self.__dict__
         json_str = json.dumps(block_dict, sort_keys=True)
