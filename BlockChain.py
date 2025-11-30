@@ -2,16 +2,50 @@ import sys
 import hashlib
 import json
 from time import time
-from uuid import uuid4
+from datetime import datetime, timezone
+from dataclasses import dataclass, field
+from typing import List
 
-class BlockChain:
+@dataclass
+class MediBlock(object):
+    '''
+    A class to model  blocks of medical transations to be added to the blockchain
+    below is how to instantiate the block to be added to the ledger
+    '''
+    index:int # -  index of the block
+    previous_block_hash:str
+    nonce:int #  number use once.
+    transaction:str # the AES encrypted set of actions  that can be decrypted into  medical operation graph.
+    timestamp:datetime = field(default_factory=lambda: datetime.now(timezone.utc).isoformat())   #  -  timestamp when block was created and added
 
-    def  __init__(self):
-        self.chain = [] # have a list of all blocks
-        self.current_transactions = [] # hold current block
+    def hash_block(self) ->str:
+        '''
+        A method to return a  sha256 has of the complete block
+        '''
+        block_dict = self.__dict__
+        json_str = json.dumps(block_dict, sort_keys=True)
+        return hashlib.sha256(json_str.encode('utf-8')).hexdigest()
+        
 
-        # Create the genesis block
-        genesis_hash = hashlib.sha256(b'genesis_block').hexdigest() # start the chain.
-        self.append_block(previous_hash = genesis_hash,
-                          nonce= self.proof_of_work(0, genesis_hash, [])
-        )
+
+
+
+@dataclass
+class MediLedger:
+    blocks: List[MediBlock] = field(default_factory=list)
+    """
+    A class to model a simple blockchain ledger for medical transactions
+    """
+    def add_block(self, block: MediBlock) -> None:
+        """Add a MediBlock to the ledger"""
+        self.blocks.append(block)
+
+    def get_block(self, index: int) -> MediBlock:
+        """Retrieve a block by index"""
+        return self.blocks[index]
+
+    def last_block(self) -> MediBlock:
+        """Get the most recent block"""
+        if self.blocks:
+            return self.blocks[-1]
+        return None

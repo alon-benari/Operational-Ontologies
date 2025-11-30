@@ -51,8 +51,8 @@ scheduling_encounter = Encounter('scheduling_encounter')
 
 
 
-<<<<<<< HEAD
-=======
+#<<<<<<< HEAD
+#=======
 import networkx as nx
 import matplotlib.pyplot as plt
 
@@ -65,7 +65,7 @@ def destroy():
     hoo.save
 #
 
->>>>>>> 37ce7bcc7ffe1ec446df68ecda619358f0366a54
+
 # get the classes (types) of the individual
 get_class  = lambda x: [(x.name,'rdf:type',cls.name) for cls in x.is_a]
 
